@@ -1,0 +1,17 @@
+The worst-case time complexity of the makeEmpty() function is O(n), where n is the total number 
+of nodes in the binary tree. This is because the function recursively traverses the tree in a postorder 
+traversal and deletes each node, which takes constant time, until all nodes have been deleted. Therefore, 
+the time required to delete each node is proportional to the total number of nodes in the tree.
+
+The worst-case time complexity of the depth() function is also O(n), where n is the total number of 
+nodes in the binary tree. This is because the function recursively traverses the tree in a preorder 
+traversal and visits each node once. The depth of the tree is determined by the maximum depth of its
+left and right subtrees, so the depth() function recursively traverses each subtree once. Therefore, 
+the time required to compute the depth is proportional to the total number of nodes in the tree.
+
+The worst-case time complexity of the breadth() function is also O(n), where n is the total number of
+nodes in the binary tree. This is because the function uses a queue to perform a level-order traversal
+of the tree, visiting each node once. The size of the queue is proportional to the number of nodes at
+each level, and the maximum number of nodes at any level is proportional to the total number of
+nodes in the tree. Therefore, the time required to compute the breadth is proportional to the total 
+number of nodes in the tree.
